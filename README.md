@@ -5,5 +5,7 @@ Results are reported in the attached paper.
 
 Install dependencies: pip install -r requirements.txt
 
-Then, navigate to directory, run: python3 -m model.<insert-module-name>
+IF INITIAL RUN, in retrieve_and_pre function in each model file, make fromsave=False, as this will initialize the preprocessing step in the feature extraction pipeline, as well as save a local copy of the preprocessed data onto the machine. For the biLSTM model, set retrieve_and_pre parameter tfidfpca=False, as we want the function to return raw preprocessed sentences instead of scaled TFxIDF features. 
+
+To run model: python3 -m model.<insert-module-name>
 
