@@ -5,7 +5,7 @@ Wang, Sida. Manning, Christopher D. (2012). Baselines and Bigrams: Simple, Good 
 for NBSVM implementation, check out the file nbsvmpre.py
 """
 
-from model.pre3 import retrieve_and_pre, dump_to_csv
+from model.pre2 import retrieve_and_pre, dump_to_csv
 from model.nbsvmpre import NBSVM
 from sklearn.model_selection import train_test_split
 import numpy as np
@@ -14,7 +14,7 @@ from sklearn.model_selection import cross_val_score
 
 
 def main():
-    X, y, test, names, lol = retrieve_and_pre(fromsave=True, tfidfpca=True, n_components=50000)
+    X, y, test, names = retrieve_and_pre(fromsave=True, tfidfpca=True, n_components=50000)
     y = np.asarray(y)
     assert X.shape[0] == y.shape[0]
 
