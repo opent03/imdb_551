@@ -8,3 +8,4 @@ keras
 gensim
 nltk
 mlxtend
+pickle
