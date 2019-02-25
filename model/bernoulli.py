@@ -1,3 +1,10 @@
+"""
+@author: Marcos
+#accuracy = 81.28%
+Scratch implementation of Bernoulli NB
+NOTE: Use trainTestMaker.py to create bigData.csv and testData.csv first
+"""
+
 import pandas as pd
 from os import listdir
 from os.path import isfile, join
@@ -215,4 +222,4 @@ def main():
 if __name__ == '__main__':
     main()
 
-accurayc = 81.28, precision = .004, recall ==.004, F1 = .0039
+
