@@ -9,3 +9,6 @@ IF INITIAL RUN, in retrieve_and_pre function in each model file, make fromsave=F
 
 To run model: python3 -m model.<insert-module-name>
 
+Most models are validated using the standard 10-fold cross validation scheme, and average accuracy, F1-score, and standard precision/recall are reported.
+
+For more information and analysis, check the .docx file.
