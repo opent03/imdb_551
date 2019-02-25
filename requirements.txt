@@ -1,0 +1,10 @@
+torch
+xgboost
+numpy
+pandas
+matplotlib
+scikit-learn
+keras
+gensim
+nltk
+mlxtend
